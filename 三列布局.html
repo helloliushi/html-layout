@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<meta content="text/html"; charset="utf-8">
+<head>
+	<title>布局</title>
+	<style type="text/css">
+	body{margin: 0;padding: 0}
+	.main{width:800px;margin: 0 auto;background: #cee}
+	.left{width: 200px;height: 500px;background:red;position: absolute;left: 0;top: 0}
+	.right{width: 300px;height: 500px;background: blue;position: absolute;right: 0;top: 0}
+	.middle{height: 500px;background: green;margin: 0 310px 0 210px}
+	</style>
+</head>
+<body>
+	<div class="left">200px</div>
+	<div class="middle">左右列固定宽度，中间列自适应。左侧绝对定位：position：absolute;left:0;top:0;右侧绝对定位：position：absolute;right:0;top:0;中间宽度定义去掉，加上左右的margin值，margn:0 310px 0 210px; 上右下左（中间空一点出的话，增加margin属性值便可以实现）</div>
+	<div class="right">300px</div>
+</body>
+</html>
