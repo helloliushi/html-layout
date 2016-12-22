@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<meta content="text/html"; charset="utf-8">
+<head>
+<script src="jquery/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("div").hover(function(){
+	//	alert("jfkasljf");
+	  $(this).css('box-shadow','10px 10px 5px #888888');
+
+	},
+	function(){
+		$(this).css('box-shadow','none');
+
+	}
+	);
+});
+</script>
+<style> 
+div
+{
+width:300px;
+height:100px;
+background-color:#ff9900;
+-moz-box-shadow: 10px 10px 5px #888888; /* 老的 Firefox */
+/*box-shadow: 10px 10px 5px #888888;
+*/}
+</style>
+</head>
+<body>
+
+<div class="divv">dsffds</div>
+
+</body>
+</html>
